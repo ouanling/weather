@@ -38,6 +38,7 @@ const handleData = (data) => {
     const Celcius = Math.floor(data.main.temp - 273.15);
     const Feels = Math.floor(data.main.feels_like - 273.15);
     const makeIcon = () => {
+        weathericon.innerHTML = "";
         let iconloc = data.weather[0].icon;
         let descript = data.weather[0].description
         let thetemp = "Temp: " + mydata.Celcius + "°C";
